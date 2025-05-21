@@ -4,7 +4,7 @@
 
 %%
 
-[0-9]+	{ yylval = atoi(yytext); return NUMBER; }
+[0-9]+	{ yylval = atoi(yytext); return NUMBER; } //int
 [-+\n]	return *yytext;
 [ \t]	;
 
